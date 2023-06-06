@@ -6,12 +6,17 @@ import {jeep} from "./jeep.js";
 import {steen} from "./stone.js";
 import {HealthBar} from "./healthbar.js";
 import {Over} from "./gameover.js";
+import {Sword} from "./sword.js";
 
 
 export class player extends Actor {
+
+    weapon
+
     constructor() {
         // collision box!
         super({ width: Resources.Tank.width, height: Resources.Tank.height })
+        this.weapon = new Sword()
     }
 
     onInitialize(engine) {
@@ -23,6 +28,9 @@ export class player extends Actor {
             this.graphics.use(Resources.Tank.toSprite());
             this.pos = new Vector(100, 100);
             let sc = Math.random() + 0.4;
+    }
+    attack(){
+        this.weapon.attack()
     }
 
     onPreUpdate(engine) {

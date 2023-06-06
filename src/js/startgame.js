@@ -50,6 +50,8 @@ export class Start extends Scene {
 onActivate(_context) {
     this.tank = new player()
     this.add(this.tank)
+
+
 }
 
     onPreUpdate(engine, delta) {

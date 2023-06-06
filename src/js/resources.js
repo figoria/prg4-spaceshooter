@@ -8,6 +8,7 @@ import tankE from '../images/tankE.png'
 import soldier from '../images/soldier.png'
 import bullet from '../images/bullet.png'
 import over from '../images/game over.png'
+import sword from '../images/sword.png'
 
 const Resources = {
     Background: new ImageSource(Background),
@@ -18,7 +19,8 @@ const Resources = {
     TankE: new ImageSource(tankE),
     Soldier: new ImageSource(soldier),
     Bullet: new ImageSource(bullet),
-    Over: new ImageSource(over)
+    Over: new ImageSource(over),
+    Sword: new ImageSource(sword)
 }
 
 const resourceArray = []
