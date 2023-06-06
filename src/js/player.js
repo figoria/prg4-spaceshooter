@@ -17,6 +17,7 @@ export class player extends Actor {
         // collision box!
         super({ width: Resources.Tank.width, height: Resources.Tank.height })
         this.weapon = new Sword()
+
     }
 
     onInitialize(engine) {
